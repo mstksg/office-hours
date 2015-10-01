@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Justin's Office Hours
+email:       jusle@chapman.edu
+author:      Justin Le
+description: "Info on Justin's Office Hours"
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://oh.jle.im"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -57,3 +57,5 @@ permalink:    pretty
 paginate:     4
 sass:
   compressed: true
+
+excerpt_separator: <!-- more -->
