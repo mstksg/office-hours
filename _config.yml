@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Justin's Office Hours
+email:       jusle@chapman.edu
+author:      Justin Le
+description: "Info on Justin's Office Hours"
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://oh.jle.im"
 date_format: "%b %-d, %Y"
 
 # Google analytics
@@ -13,10 +13,11 @@ google_analytics: UA-53548208-1
 google_verification:
 
 # Optional features
-animated:           false
-show_related_posts: false
-show_post_footers:  false
-show_social_icons:  false
+animated:             false
+show_related_posts:   false
+show_post_footers:    false
+show_social_icons:    false
+ajaxify_contact_form: false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
@@ -57,3 +58,5 @@ permalink:    pretty
 paginate:     4
 sass:
   compressed: true
+
+excerpt_separator: <!-- more -->
