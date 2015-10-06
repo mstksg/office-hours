@@ -5,20 +5,35 @@ layout: default
 <div class="home">
 
   <div class="posts">
-    {% for post in paginator.posts %}
-      <div class="post py3">
-        <!-- <p class="post-meta">{{ post.date | date: site.date_format }}</p> -->
-        <!-- <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a> -->
-        <a href="#" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
-        <p class="post-summary">
-          {% if post.summary %}
-            {{ post.summary }}
-          {% else %}
-            {{ post.excerpt }}
-          {% endif %}
-        </p>
+
+    <div class="post py3">
+      {% assign post = site.posts.first %}
+
+      <a href="#" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a>
+
+      <p class="post-summary">
+        {% if post.summary %}
+          {{ post.summary }}
+        {% else %}
+          {{ post.excerpt }}
+        {% endif %}
+      </p>
       </div>
-    {% endfor %}
+
+    <!-- {% for post in paginator.posts %} -->
+    <!--   <div class="post py3"> -->
+    <!--     <1!-- <p class="post-meta">{{ post.date | date: site.date_format }}</p> --1> -->
+    <!--     <1!-- <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a> --1> -->
+    <!--     <a href="#" class="post-link"><h3 class="h1 post-title">{{ post.title }}</h3></a> -->
+    <!--     <p class="post-summary"> -->
+    <!--       {% if post.summary %} -->
+    <!--         {{ post.summary }} -->
+    <!--       {% else %} -->
+    <!--         {{ post.excerpt }} -->
+    <!--       {% endif %} -->
+    <!--     </p> -->
+    <!--   </div> -->
+    <!-- {% endfor %} -->
   </div>
 
   <!-- {% include pagination.html %} -->
